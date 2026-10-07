@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: koyu-kept_web_1
+      APP_PORT: 6767
+      # Kept has its own user accounts and uses Bearer tokens for the API
+      # and mobile apps, so Umbrel's auth layer is disabled.
+      PROXY_AUTH_ADD: "false"
+
+  web:
+    image: ghcr.io/ericerkz/kept:1.8.1@sha256:53bff8e0036be04740759030e1575b740becef13c6ec9b79cb9b6940b4815e9d
+    restart: on-failure
+    environment:
+      NODE_ENV: production
+      PORT: 6767
+      SQLITE_PATH: /app/data/kept.sqlite
+      PUID: 1000
+      PGID: 1000
+      KEPT_CORS_ALLOW_ALL: 1
+    volumes:
+      - ${APP_DATA_DIR}/data:/app/data

@@ -1,0 +1,54 @@
+manifestVersion: 1
+id: koyu-kept
+name: Kept
+tagline: Your self-hosted sticky notes
+icon: https://raw.githubusercontent.com/ericerkz/kept/master/src/assets/images/keep2x.png
+category: files
+version: "1.8.1"
+port: 6767
+description: >-
+  Kept is a self-hosted notes app built for quick capture: text notes, checklists, images,
+  drawings, links, attachments, labels, colors, and reminders. It aims to keep the lightweight
+  feel of Google Keep while storing your data on your own server.
+
+
+  Features:
+
+  - Text notes, checklists, image notes, drawings, links, and file attachments
+
+  - Labels, binders, colors, background images, pinned notes, archive, and trash
+
+  - Search and filters, link previews, and inline images
+
+  - Time reminders with browser push notifications
+
+  - Real-time collaborative sharing of notes between users on the same instance
+
+  - Offline viewing/editing with automatic sync
+
+  - Google Keep Takeout import
+
+  - Built-in database backups and restore
+
+  - Local user accounts, optional 2FA, and optional OpenID Connect single sign-on
+
+  - MCP server and OAuth 2.1 access for integrations
+
+  - Native iOS and Android apps that connect to your server
+
+
+  On first launch, open the app and create the first admin account.
+developer: Eric Erkz
+website: https://www.keepitkept.xyz
+submitter: koyu
+submission: https://github.com/ericerkz/kept
+repo: https://github.com/ericerkz/kept
+support: https://github.com/ericerkz/kept/issues
+gallery:
+  - https://raw.githubusercontent.com/ericerkz/kept/master/src/assets/images/ui-showcase.png
+releaseNotes: >-
+  See the full changelog at https://github.com/ericerkz/kept/releases
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
